@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/jpg" href="public/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="text/html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Talker-Talk </title>
+    <link rel="stylesheet"  href="/style.css">
+
+</head>  
+<body>
+    <nav class="nav">
+        <img class="logo" src="logo.webp" alt="LOGO">
+        <p id="navp">For Emojies Press:  "Windows key" + "." (period)  in Windows </p>
+        <h1 class="h1class"></h1>
+    </nav>  <br> 
+    <div class="box">
+        <div class="title"> <p > Talker-Talk </p></div>
+        
+         <div class="both">
+            <div class="usersinfo">
+                <span id="uonline">Users Online:</span> <br>
+                <ol id="ol"></ol>
+            </div>
+           <div class="main">
+            <div class="chats">     </div>
+            <form  id="send-form">
+                <i class="fas fa-smile fa-lg" id="smile" onclick="smileclick()"></i> 
+                <input type="text" id="txt" placeholder="Message">
+                <input type="submit" value="Send" id="btn">
+            </form>
+           </div>
+    </div>
+    </div> 
+
+    <script defer  src="/socket.io/socket.io.js"></script>
+    <script defer  src="/client.js"></script>
+    <script>
+        const smile = document.querySelector('#smile');
+        function smileclick(){
+            const navp = document.querySelector('#navp');
+            navp.style.visibility = "visible";
+            setTimeout(()=>{
+            navp.style.visibility = "hidden";
+            }, 2000);
+        }
+</script>
+</body>
+</html>

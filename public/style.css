@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(to right top, #1b1d22, #15232a, #0e2a2a, #172f22, #2b3217);
+}
+.logo{
+    display: block; 
+    margin: auto;
+    height:45px;
+}
+#navp{
+    color: #182848;
+    font-weight: bold;
+    background-color: #ffff;
+    border-radius: 10px;
+    width: 40%;
+    padding: 5px 10px;
+    margin: auto;
+    text-align: center;
+    box-shadow: rgba(255, 5, 34, 0.807) 0px 0px 0px 3px;
+    position: absolute;
+    top: 65%;
+    left: 30%;
+    visibility:hidden;
+}
+.box{
+    box-shadow: rgb(2, 235, 252) 0px 8px 20px 10px;
+    margin: auto;
+    width: 70%;
+    padding:2%;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #333538;
+}
+.title{
+    display: flex;
+    color: white;
+    padding: 2% 0;
+    background-color: rgb(28, 27, 27);
+    width: 100%;
+    height: 10%;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+}
+.title p{
+    font-size: 26px;
+}
+.title p{
+    margin: auto;
+}
+.both{
+    width: 100%;
+    display: flex;
+    padding: 9px 0px;
+    justify-content: space-around;
+}
+.usersinfo{
+    color: rgba(133, 190, 244, 0.911);
+    padding: 2%;
+    width: 21%;
+    background-color: rgb(28, 27, 27);
+    border-radius: 12px;
+    overflow-y:scroll;
+    height: 60vh;
+}
+.usersinfo::-webkit-scrollbar{
+    display: none;
+}
+.usersinfo h3{
+    margin: auto;
+}
+#ol{
+    margin: 0rem 2rem;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    border-radius: 12px;
+    background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
+    box-shadow: rgb(12, 12, 12) 0px 10px 20px 10px;
+}
+.chats{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 54vh;
+    overflow-y:scroll;
+}
+.chats::-webkit-scrollbar{
+    display: none;
+}
+.message{
+    margin: 8px 10px 0px 10px;
+    color: aliceblue;
+    font-family:cursive ;
+    border-radius: 10px;
+    padding:2px 10px;
+    max-width: 70%;
+    overflow-wrap:break-word;
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+}
+.left{
+    align-self: flex-start;
+}
+.span{
+    color: orange;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: smaller;
+}
+.right{
+    align-self: flex-end;
+}
+#send-form{
+    width: 98%;
+    margin-bottom: 1vh;
+    min-height: 5vh;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 0px, rgba(10, 0, 0, 0.5) 0px -10px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#send-form i{
+    color:rgb(18, 153, 237);
+    margin: auto;
+}
+#txt{
+    border: none;
+    width:80%;
+    font-size: 1rem;
+}
+#btn {
+  --c: #fff;
+  background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p,100%)/300% no-repeat,
+    #004dff;
+  color: #0000;
+  border: none;
+  transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
+  text-shadow: calc(var(--_i,-1)* 0.08em) -.01em 0   var(--c),
+    calc(var(--_i,-1)*-0.08em)  .01em 2px #0004;
+  outline-offset: .1em;
+  transition: 0.3s;
+}
+#btn:hover,
+#btn:focus-visible {
+  --_p: 0%;
+  --_i: 1;
+}
+#btn:active {
+  text-shadow: none;
+  color: var(--c);
+  box-shadow: inset 0 0 9e9q #0005;
+  transition: 0s;
+}
+#btn {
+  font-weight: bold;
+  margin: 0;
+  cursor: pointer;
+  padding: 0px 3%;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius:2rem;
+}
+.newjoined , .userleft{
+    color: green;
+    max-width: 80%;
+    align-self: center;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 10px;
+    overflow-wrap: break-word;
+}
+.userleft{
+    color: red;
+}
+.h1class{
+    text-align: center;
+    color: whitesmoke;
+    text-shadow: rgb(221, 18, 18) 1px 0 10px;
+}
+@media (max-width:500px)
+{
+
+    .box{
+        width: 100%;
+    }
+    .title p{
+        font-size: 22px;
+    }
+    .both{
+        flex-direction: column;
+    }
+    .main{
+        width: 100%;
+        height: 100%;
+    }
+    .usersinfo{
+        width: 100%;
+        height: 10vh;   
+    }
+    .chats{
+        min-height: 60vh;
+    }
+}

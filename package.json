@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.6.2"
+  },
+  "name": "nodechatapp",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "AV",
+  "license": "ISC",
+  "description": ""
+}
